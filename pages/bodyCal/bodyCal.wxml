@@ -1,0 +1,73 @@
+<view class="bodyCal">
+  <!-- <view class="headTitle">{{currentType}}</view> -->
+  <view class="imgcal">
+    <view class="leftcal">
+      <view class="bodycal">身体指标计算</view>
+      <view class="bodyintroduction">一键计算，快速了解身体健康</view>
+    </view>
+  </view>
+  <view class="content">
+    <block>
+      <view class="item">
+        <!-- 性别 -->
+        <view class="gender" wx:if="{{currentType==='基础代谢率' || currentType==='卡路里摄入' || currentType==='身体脂肪'|| currentType==='身体骨架大小'}}">
+          <van-dropdown-menu active-color="#51ca8d" overlay="false">
+            <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="onGenderChange" />
+          </van-dropdown-menu>
+        </view>
+        <!-- 运动方式 -->
+        <view class="sport" wx:if="{{currentType==='燃烧卡路里'}}">
+          <van-dropdown-menu active-color="#51ca8d" overlay="false">
+            <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="onSportChange" />
+          </van-dropdown-menu>
+        </view>
+        <!-- 年龄 -->
+        <view class="age" wx:if="{{currentType==='基础代谢率' || currentType==='卡路里摄入' || currentType==='身体脂肪'}}">
+          <van-cell-group>
+            <van-field value="{{ ageValue }}" placeholder="输入您的年龄" bind:change="onAgeChange" custom-style="border: 2px solid #ededed;border-radius: 15rpx;" />
+          </van-cell-group>
+        </view>
+        <!-- 身高 -->
+        <view class="height" wx:if="{{currentType==='基础代谢率' || currentType==='卡路里摄入' || currentType==='身体脂肪'|| currentType==='身体肥胖指数'|| currentType==='身体骨架大小'|| currentType==='身体质量指数'}}">
+          <van-cell-group>
+            <van-field value="{{ heightValue }}" placeholder="输入您的身高（厘米）" bind:change="onHeightChange" custom-style="border: 2px solid #ededed;border-radius: 15rpx;" />
+          </van-cell-group>
+        </view>
+        <!-- 体重 -->
+        <view class="weight" wx:if="{{currentType==='基础代谢率' || currentType==='卡路里摄入' || currentType==='身体脂肪'|| currentType==='身体质量指数'|| currentType==='燃烧卡路里'|| currentType==='每日水摄入量'}}">
+          <van-cell-group>
+            <van-field value="{{ weightValue }}" placeholder="输入您的体重（公斤）" bind:change="onWeightChange" custom-style="border: 2px solid #ededed;border-radius: 15rpx;" />
+          </van-cell-group>
+        </view>
+        <!-- 臀围 -->
+        <view class="hip" wx:if="{{currentType==='身体肥胖指数'}}">
+          <van-cell-group>
+            <van-field value="{{ hipValue }}" placeholder="输入您的臀围（厘米）" bind:change="onHipChange" custom-style="border: 2px solid #ededed;border-radius: 15rpx;" />
+          </van-cell-group>
+        </view>
+        <!-- 手腕围 -->
+        <view class="wrist" wx:if="{{currentType==='身体骨架大小'}}">
+          <van-cell-group>
+            <van-field value="{{ wristValue }}" placeholder="输入您的手腕围（厘米）" bind:change="onWristChange" custom-style="border: 2px solid #ededed;border-radius: 15rpx;" />
+          </van-cell-group>
+        </view>
+        <view class="distance" wx:if="{{currentType==='燃烧卡路里'}}">
+          <van-cell-group>
+            <van-field value="{{ distanceValue }}" placeholder="输入您运动的距离（公里）" bind:change="onDistanceChange" custom-style="border: 2px solid #ededed;border-radius: 15rpx;" />
+          </van-cell-group>
+        </view>
+        <!-- 是否有内容为空 -->
+        <view class="null" wx:if="{{isnull==1}}">
+          <van-toast id="van-toast" />
+        </view>
+        <!-- 计算结果 -->
+        <view class="result" wx:if="{{result.length!=0}}">
+          <van-dialog id="van-dialog" />
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="calbtn" bindtap="getResult">
+    <van-button type="primary" custom-style="background-color: #51ca8d;width:100%;border-radius:70rpx;">计算</van-button>
+  </view>
+</view>

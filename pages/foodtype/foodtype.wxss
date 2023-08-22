@@ -1,0 +1,39 @@
+.foodtype {
+  padding: 0 30rpx;
+}
+.foodtype .header {
+  box-sizing: border-box;
+}
+.foodtype .header .input {
+  width: 100%;
+}
+.foodtype .header .input .van-search,
+.foodtype .header .input .van-search--withactioncustom-class {
+  padding: 40rpx 0rpx 20rpx 0rpx;
+}
+.foodtype .header .search {
+  background-color: #51ca8d;
+  color: #fff;
+  height: 100%;
+  padding: 0 40rpx;
+  margin-left: 20rpx;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.foodtype .content .item {
+  border-bottom: 1px solid #e6e6e6;
+}
+.foodtype .content .item .title {
+  margin-top: 10rpx;
+  font-weight: bold;
+  font-size: 31rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+.foodtype .content .item .calorie {
+  margin-bottom: 10rpx;
+  color: #a2a2a2;
+  font-size: 26rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}

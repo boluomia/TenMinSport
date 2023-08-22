@@ -1,0 +1,16 @@
+<view class="tip">
+  <view class="title">
+    注意事项
+  </view>
+  <view class="info">
+    {{info}}
+  </view>
+  <view class="content">
+    <block wx:for="{{arr}}" wx:key="index">
+      <view class="item">
+        <view class="step">{{item.step}}</view>
+        <view class="detail">{{item.detail}}</view>
+      </view>
+    </block>
+  </view>
+</view>

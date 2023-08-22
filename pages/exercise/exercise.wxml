@@ -1,0 +1,25 @@
+<view class="exercise">
+  <view class="head">
+    <view class="headTitle">{{currentType}}</view>
+    <view class="time">时长：{{typeInfo[0].time}}</view>
+  </view>
+  <view class="introduction">
+    {{typeInfo[0].info}}
+  </view>
+  <view class="content">
+    <view class="num">
+      {{result.length}}个练习
+    </view>
+    <block wx:for="{{result}}" wx:key="index">
+      <view class="detail" bindtap="goToDetail" data-type="{{item.name}}">
+        <view class="img" style="background: url({{item.background}});background-size: 100% 100%;">
+          <!-- <image src="https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/sport_typeimg/Legs.jpg?sign=e499f8d3b63496c69e682d246bcafb2a&t=1690969004" mode="" /> -->
+        </view>
+        <view class="name">
+          {{item.name}}
+        </view>
+      </view>
+    </block>
+
+  </view>
+</view>

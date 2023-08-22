@@ -1,0 +1,10 @@
+<view>
+  食物名：<input type="text" value="{{food_name}}" bindinput="getInputValue" />
+  卡路里：<input type="text" value="{{calorie}}" bindinput="getkaluliValue" />
+</view>
+<button bindtap="addFn" type="primary">插入数据</button>
+<view>
+  查找的食物名：<input type="text" value="{{find_name}}" bindinput="getCheckValue"/>
+</view>
+<button bindtap="findFn" type="primary">查询数据</button>
+<!-- <button bindtap="checkFn" type="primary">查询数据</button> -->

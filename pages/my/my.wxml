@@ -1,0 +1,34 @@
+<view class="my">
+  <view class="title">我的</view>
+  <view class="head">
+    <view class="img" bindtap="goToInfo">
+      <!-- <image src="https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/sport/Pilates.jpg?sign=f6a8297be7dcf0f67e7ec730b2f88e24&t=1690994067" mode="" /> -->
+      <image src="{{userInfo.avatarUrl}}" mode="" />
+    </view>
+    <view class="info">
+      <view class="name">{{userInfo.nickName}}</view>
+      <view class="tip">爱生活，爱运动</view>
+    </view>
+  </view>
+  <view class="function">
+    <view class="attention" bindtap="goToTip">
+      <view class="icon">
+        <image src="https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/sport_icon/tip.png?sign=b4350def9460f21906d7ac5ae2bb6123&t=1691032573" mode="" />
+      </view>
+      <view class="msg">注意事项</view>
+    </view>
+    <view class="exit" bindtap="exitClick">
+      <view class="icon">
+        <image src="https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/sport_icon/exit.png?sign=a0971d7cee60eee7a9138e6ea9e718e8&t=1691032889" mode="" />
+      </view>
+      <view class="msg">退出登录</view>
+    </view>
+    <view class="logoff" bindtap="delete">
+      <view class="icon">
+        <image src="https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/sport_icon/remove.png?sign=24c553d7fcf285225ccacfda5636b77d&t=1691043705" mode="" />
+      </view>
+      <view class="msg">注销账号</view>
+    </view>
+
+  </view>
+</view>

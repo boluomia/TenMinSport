@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/baseinfo/baseinfo",
+    "pages/myinfo/myinfo",
+    "pages/tip/tip",
+    "pages/calculation/calcution",
+    "pages/heat/heat",
+    "pages/exercise/exercise",
+    "pages/exerciseDetail/exerciseDetail",
+    "pages/test/test",
+    "pages/bodyCal/bodyCal",
+    "pages/bodySearch/bodySearch",
+    "pages/heatSearch/heatSearch",
+    "pages/foodtype/foodtype",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "十分钟运动",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#b4b4b4",
+    "selectedColor": "#51ca8d",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "专项训练",
+        "iconPath": "/assets/home.png",
+        "selectedIconPath": "/assets/home-on.png"
+      },
+      {
+        "pagePath": "pages/calculation/calcution",
+        "text": "指标计算",
+        "iconPath": "/assets/calculation.png",
+        "selectedIconPath": "/assets/calculation-on.png"
+      },
+      {
+        "pagePath": "pages/heat/heat",
+        "text": "热量查询",
+        "iconPath": "/assets/heat.png",
+        "selectedIconPath": "/assets/heat-on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "/assets/my.png",
+        "selectedIconPath": "/assets/my-on.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  }
+}

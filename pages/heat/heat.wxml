@@ -1,0 +1,71 @@
+<view class="heat">
+  <view class="title">热量查询</view>
+  <view class="header">
+    <view class="input">
+      <van-search class="ipt" value="{{ value }}" use-action-slot placeholder="输入搜索内容" bind:change="onChange" bind:search="goToSearch">
+        <view class="search" slot="action" bind:tap="onClick" bindtap="goToSearch">搜索</view>
+      </van-search>
+    </view>
+  </view>
+  <view class="category">
+    <block wx:for="{{arr}}" wx:key="index">
+      <view class="item" bindtap="handleClick" data-type="{{item.type}}">
+        <view class="img">
+          <image src="{{item.src}}" mode="" />
+        </view>
+        <view class="type">{{item.type}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="healthimg">
+    <view class="decoration">
+      <view class="flowers"></view>
+    </view>
+    <view class="info">
+      <view class="msgone">健康饮食</view>
+      <view class="msgtwo">快乐生活</view>
+    </view>
+  </view>
+  <view class="foodsug">
+    <view class="sugtitle">饮食建议</view>
+    <view class="menu">
+      <view class="breakfast">
+        <view class="img">
+          <image src="../../assets/breakfast.png" mode="" />
+        </view>
+        <view class="foodinfo">
+          <view class="type">早餐</view>
+          <view class="suggestion">建议摄入400千卡</view>
+        </view>
+      </view>
+      <view class="lunch">
+        <view class="img">
+          <image src="../../assets/lunch.png" mode="" />
+        </view>
+        <view class="foodinfo">
+          <view class="type">午餐</view>
+          <view class="suggestion">建议摄入1000千卡</view>
+        </view>
+      </view>
+      <view class="dinner">
+        <view class="img">
+          <image src="../../assets/dinner.png" mode="" />
+        </view>
+        <view class="foodinfo">
+          <view class="type">晚餐</view>
+          <view class="suggestion">建议摄入200千卡</view>
+        </view>
+      </view>
+      <view class="add">
+        <view class="img">
+          <image src="../../assets/add.png" mode="" />
+        </view>
+        <view class="foodinfo">
+          <view class="type">加餐</view>
+          <view class="suggestion">建议摄入200千卡</view>
+        </view>
+      </view>
+    </view>
+    <view class="blank"></view>
+  </view>
+</view>

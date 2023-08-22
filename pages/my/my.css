@@ -1,0 +1,62 @@
+.my {
+  padding: 0 30rpx;
+}
+.my .title {
+  font-weight: bold;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+}
+.my .head {
+  display: flex;
+  margin: 50rpx 0rpx;
+}
+.my .head .img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.my .head .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.my .head .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30rpx;
+}
+.my .head .info .name {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+.my .head .info .tip {
+  color: #999;
+  font-size: 26rpx;
+}
+.my .function .logoff,
+.my .function .exit,
+.my .function .attention {
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.my .function .logoff .icon,
+.my .function .exit .icon,
+.my .function .attention .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.my .function .logoff .icon image,
+.my .function .exit .icon image,
+.my .function .attention .icon image {
+  width: 100%;
+  height: 100%;
+}
+.my .function .logoff .msg,
+.my .function .exit .msg,
+.my .function .attention .msg {
+  font-size: 34rpx;
+}

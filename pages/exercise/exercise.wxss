@@ -1,0 +1,37 @@
+.exercise {
+  padding: 0 30rpx;
+}
+.exercise .head .headTitle {
+  font-weight: bold;
+  font-size: 44rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.exercise .head .time {
+  color: #9a9a9a;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.exercise .introduction {
+  font-size: 30rpx;
+  margin: 40rpx 0rpx;
+}
+.exercise .content {
+  margin-bottom: 60rpx;
+}
+.exercise .content .num {
+  font-weight: bold;
+}
+.exercise .content .detail {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.exercise .content .detail .img {
+  width: 140rpx;
+  height: 140rpx;
+}
+.exercise .content .detail .name {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,182 @@
+.heat {
+  padding: 0 30rpx;
+
+  .title {
+    font-weight: 700;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 36rpx;
+  }
+
+  .header {
+    box-sizing: border-box;
+
+    .input {
+      width: 100%;
+
+      .van-search,
+      .van-search--withactioncustom-class {
+        padding: 40rpx 0rpx 20rpx 0rpx;
+      }
+    }
+
+    .search {
+      background-color: #51ca8d;
+      color: #fff;
+      height: 100%;
+      padding: 0 40rpx;
+      margin-left: 20rpx;
+      border-radius: 40rpx;
+      text-align: center;
+    }
+  }
+
+  .category {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 170rpx);
+    // column-gap: 30rpx;
+    margin-top: 30rpx;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .img {
+        width: 80rpx;
+        height: 80rpx;
+
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .type {
+        margin-top: 20rpx;
+        font-size: 29rpx;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .healthimg {
+    margin-top: 10rpx;
+    width: 100%;
+    height: 200rpx;
+    background: url("https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/calimg/healthyfood.png?sign=b25bc9d3170e0790e391d20ae76ae004&t=1690698105");
+    background-color: #fffcdd;
+    background-repeat: no-repeat;
+    background-position: 50rpx;
+    background-size: 25%;
+    position: relative;
+    border-radius: 30rpx;
+
+    .info {
+      .msgone {
+        color: #256c1c;
+        font-weight: bold;
+        position: absolute;
+        top: 20%;
+        right: 40%;
+        font-size: 40rpx;
+      }
+
+      .msgtwo {
+        color: #256c1c;
+        font-weight: bold;
+        position: absolute;
+        top: 55%;
+        right: 30%;
+        font-size: 40rpx;
+      }
+    }
+
+    .decoration {
+      .flowers {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url("https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/calimg/pakchoi.png?sign=a5b4aba7fa29e70e5564b1a6f878f5c4&t=1690700869");
+        background-repeat: no-repeat;
+        background-position: 520rpx;
+        background-size: 20%;
+      }
+
+    }
+
+  }
+
+  .foodsug {
+    .sugtitle {
+      font-weight: bold;
+      font-size: 34rpx;
+      height: 110rpx;
+      line-height: 110rpx;
+    }
+
+    .blank {
+      width: 100%;
+      height: 30rpx;
+    }
+
+    .menu {
+
+      .breakfast,
+      .lunch,
+      .dinner,
+      .add {
+        width: 100%;
+        height: 150rpx;
+        border-radius: 20rpx;
+        margin-bottom: 30rpx;
+        display: flex;
+        align-items: center;
+
+        .img {
+          width: 80rpx;
+          height: 80rpx;
+          margin: 0rpx 30rpx;
+
+          image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .foodinfo {
+          .type {
+            font-size: 30rpx;
+            font-weight: bold;
+          }
+
+          .suggestion {
+            font-size: 26rpx;
+            color: #606470;
+            margin-top: 10rpx;
+          }
+        }
+      }
+
+      .breakfast {
+        background-color: #cceade;
+      }
+
+      .lunch {
+        background-color: #fae9d7;
+      }
+
+      .dinner {
+        background-color: #dce7f9;
+      }
+
+      .add {
+        background-color: #fadde1;
+      }
+    }
+
+  }
+}

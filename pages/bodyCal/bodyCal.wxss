@@ -1,0 +1,56 @@
+.bodyCal {
+  padding: 0 30rpx;
+}
+.bodyCal .imgcal {
+  position: relative;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  height: 300rpx;
+  width: 100%;
+  background: url("https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/calimg/sport.png?sign=93e224e44346144f68b8ae49cf9d5943&t=1690644599");
+  background-color: #51ca8d;
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 30rpx;
+}
+.bodyCal .imgcal .leftcal {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+}
+.bodyCal .imgcal .leftcal .bodycal {
+  color: #fff;
+  font-size: 48rpx;
+  margin-bottom: 35rpx;
+}
+.bodyCal .imgcal .leftcal .bodyintroduction {
+  color: #fff;
+  font-size: 28rpx;
+}
+.bodyCal .content .item .age,
+.bodyCal .content .item .height,
+.bodyCal .content .item .weight,
+.bodyCal .content .item .hip,
+.bodyCal .content .item .wrist,
+.bodyCal .content .item .distance {
+  margin-top: 40rpx;
+}
+.bodyCal .content .item .age .van-cell,
+.bodyCal .content .item .height .van-cell,
+.bodyCal .content .item .weight .van-cell,
+.bodyCal .content .item .hip .van-cell,
+.bodyCal .content .item .wrist .van-cell,
+.bodyCal .content .item .distance .van-cell {
+  padding: 20rpx 32rpx;
+}
+.bodyCal .content .item .gender van-dropdown-menu .van-dropdown-menu,
+.bodyCal .content .item .sport van-dropdown-menu .van-dropdown-menu {
+  box-shadow: none;
+  border: 2px solid #ededed;
+  height: 88rpx;
+  border-radius: 60rpx;
+}
+.bodyCal .calbtn {
+  margin-top: 80rpx;
+}

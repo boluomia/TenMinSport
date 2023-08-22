@@ -1,0 +1,25 @@
+.exerciseDetail {
+  padding: 0 30rpx;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.exerciseDetail .img {
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.exerciseDetail .currentStep {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 38rpx;
+  margin: 30rpx 0rpx;
+}
+.exerciseDetail .content .item {
+  font-size: 30rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}

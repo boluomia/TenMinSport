@@ -1,0 +1,13 @@
+<view class="home">
+  <view class="title">运动</view>
+  <view class="tip">健康的身体，每天只需10分钟</view>
+  <view class="content">
+    <block wx:for="{{arr}}" wx:key="index">
+      <view class="item" style="background: url({{item.url}});background-size: 100%;  background-repeat: no-repeat; background-position: center;">
+        <view class="type">{{item.type}}</view>
+        <van-button plain type="info" bindtap="goToExercise" data-type="{{item.type}}">开始锻炼</van-button>
+      </view>
+    </block>
+  </view>
+  <view class="blank"></view>
+</view>

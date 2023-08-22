@@ -1,0 +1,39 @@
+.heatSearch {
+  padding: 0 30rpx;
+}
+.heatSearch .header {
+  box-sizing: border-box;
+}
+.heatSearch .header .input {
+  width: 100%;
+}
+.heatSearch .header .input .van-search,
+.heatSearch .header .input .van-search--withactioncustom-class {
+  padding: 40rpx 0rpx 20rpx 0rpx;
+}
+.heatSearch .header .search {
+  background-color: #51ca8d;
+  color: #fff;
+  height: 100%;
+  padding: 0 40rpx;
+  margin-left: 20rpx;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.heatSearch .content .item {
+  border-bottom: 1px solid #e6e6e6;
+}
+.heatSearch .content .item .title {
+  margin-top: 10rpx;
+  font-weight: bold;
+  font-size: 31rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+.heatSearch .content .item .calorie {
+  margin-bottom: 10rpx;
+  color: #a2a2a2;
+  font-size: 26rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}

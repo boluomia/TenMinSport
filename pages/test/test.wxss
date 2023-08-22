@@ -1,0 +1,8 @@
+button{
+  margin-bottom: 30rpx;
+}
+input{
+  background-color: #ccc;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}

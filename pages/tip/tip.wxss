@@ -1,0 +1,25 @@
+.tip {
+  padding: 0 30rpx;
+}
+.tip .title {
+  font-weight: bold;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+}
+.tip .info {
+  margin: 30rpx 0rpx 60rpx 0rpx;
+  font-size: 34rpx;
+}
+.tip .content .item {
+  margin-bottom: 40rpx;
+}
+.tip .content .item .step {
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.tip .content .item .detail {
+  font-size: 32rpx;
+  color: #999;
+  margin-top: 20rpx;
+}

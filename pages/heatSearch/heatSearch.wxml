@@ -1,0 +1,22 @@
+<view class="heatSearch">
+  <view class="header">
+    <view class="input">
+      <van-search class="ipt" value="{{ value }}" use-action-slot placeholder="输入搜索内容" bind:change="onChange" bind:search="onSearch">
+        <view class="search" slot="action" bind:tap="onClick">搜索</view>
+      </van-search>
+    </view>
+  </view>
+  <view class="content">
+    <block wx:if="{{result.length != 0}}">
+      <block wx:for="{{result}}" wx:key="index">
+        <view class="item">
+          <view class="title">{{item.food_name}}</view>
+          <view class="calorie">{{item.calorie}}（千卡/克）</view>
+        </view>
+      </block>
+    </block>
+    <block wx:else>
+      <van-empty description="暂无相关内容" />
+    </block>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="myinfo">
+  <view class="headimg">
+    <view class="img">
+      <image src="{{avatarUrl}}" />
+    </view>
+    <view class="btn">
+      <button bindtap="chooseImageFn">选择图片</button>
+      <button bindtap="upLoadCloudFn">保存</button>
+    </view>
+  </view>
+</view>

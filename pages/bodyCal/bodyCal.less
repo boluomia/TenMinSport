@@ -1,0 +1,71 @@
+.bodyCal {
+  padding: 0 30rpx;
+
+  .imgcal {
+    position: relative;
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+    height: 300rpx;
+    width: 100%;
+    background: url("https://636c-cloud1-3g44uzuq95e1f08a-1319632653.tcb.qcloud.la/calimg/sport.png?sign=93e224e44346144f68b8ae49cf9d5943&t=1690644599");
+    background-color: #51ca8d;
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 30rpx;
+
+    .leftcal {
+      position: absolute;
+      top: 20%;
+      left: 4%;
+
+      .bodycal {
+        color: #fff;
+        font-size: 48rpx;
+        margin-bottom: 35rpx;
+      }
+
+      .bodyintroduction {
+        color: #fff;
+        font-size: 28rpx;
+      }
+    }
+  }
+
+  .content {
+    .item {
+
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+      .age,
+      .height,
+      .weight,
+      .hip,
+      .wrist,
+      .distance {
+        margin-top: 40rpx;
+
+        .van-cell {
+          padding: 20rpx 32rpx;
+        }
+      }
+
+      .gender,.sport{
+        van-dropdown-menu {
+          .van-dropdown-menu {
+            box-shadow: none;
+            border: 2px solid #ededed;
+            height: 88rpx;
+            border-radius: 60rpx;
+          }
+        }
+      }
+
+    }
+  }
+
+  .calbtn {
+    margin-top: 80rpx;
+  }
+}
